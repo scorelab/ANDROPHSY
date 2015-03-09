@@ -1,0 +1,10 @@
+#!/system/bin/sh
+
+mount -o remount,rw /system
+cd /system/xbin/
+/system/xbin/busybox --list | xargs rm
+rm /system/xbin/busybox
+rm /system/xbin/unroot
+cd /
+mount -o remount,ro /system
+echo "Saferoot changes removed. Use SuperSU to complete unrooting."

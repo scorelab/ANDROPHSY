@@ -1,0 +1,2 @@
+34632f262a44f0824bb7cf89fe151610  /home/indeewari/1/Acquire/system/app/BCService.apk
+84eb0935fa32c83332bb8eb2a8fd6cfe  /home/indeewari/1/Acquire/system/app/JobManager.apk
