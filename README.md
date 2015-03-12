@@ -27,6 +27,6 @@ This section describes how to setup development environment for ANDROPHSY. Curre
 ANDROPHSY is an opensource tool and has employed several existing command line utilities to perform several jobs at the back end. ANDROPHSY consists of device rooting module and has used existing exploits to gain root access. ANDROPHSY authors acknowledge all of the original work contributors and respect their rights. 
 
 # Inquiries
-For inquires related to ANDROPHSY project contact: indeewariua[at]gmail[dot]com
+For inquires related to ANDROPHSY project contact: indeewariua[at]gmail[dot]com, amilads[at]gmail[dot]com
  
 
