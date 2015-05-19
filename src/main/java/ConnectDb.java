@@ -28,7 +28,7 @@ import java.util.Properties;
  */
 public class ConnectDb {
 	private String userName = "root";
-	private String password = "root";
+	private String password = "dan";
 	private String url		= "jdbc:mysql://localhost:3306/";
 	private String dbName	= "Androspydb";
 	private String driver	= "com.mysql.jdbc.Driver";

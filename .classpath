@@ -2,26 +2,28 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="swing2swt.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/mysql-connector-java-5.1.18-bin.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/org.eclipse.jface-3.8.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/sqlite-jdbc-3.8.6.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/commons-compress-1.5.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/org.csstudio.swt.xygraph_2.1.0.201209121540.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/org.eclipse.draw2d_3.5.0.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/eclipse-equinox-common-3.5.0.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/org.eclipse.core.commands.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/org.eclipse.osgi.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itextpdf-5.5.3.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itext-pdfa-5.5.3.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itext-xtra-5.5.3.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itextpdf-5.5.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itextpdf-5.5.3-sources.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itext-pdfa-5.5.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itext-pdfa-5.5.3-sources.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itext-xtra-5.5.3-javadoc.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/itext-xtra-5.5.3-sources.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/java-json.jar"/>
-	<classpathentry kind="lib" path="/home/indeewari/workspace/Androspy/org.eclipse.swt_3.7.2.jar"/>
+	<classpathentry kind="lib" path="jar/commons-compress-1.5.jar"/>
+	<classpathentry kind="lib" path="jar/eclipse-equinox-common-3.5.0.jar"/>
+	<classpathentry kind="lib" path="jar/itext-pdfa-5.5.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="jar/itext-pdfa-5.5.3-sources.jar"/>
+	<classpathentry kind="lib" path="jar/itext-pdfa-5.5.3.jar"/>
+	<classpathentry kind="lib" path="jar/itext-xtra-5.5.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="jar/itext-xtra-5.5.3-sources.jar"/>
+	<classpathentry kind="lib" path="jar/itext-xtra-5.5.3.jar"/>
+	<classpathentry kind="lib" path="jar/itextpdf-5.5.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="jar/itextpdf-5.5.3-sources.jar"/>
+	<classpathentry kind="lib" path="jar/itextpdf-5.5.3.jar"/>
+	<classpathentry kind="lib" path="jar/jasperreports-5.0.4.jar"/>
+	<classpathentry kind="lib" path="jar/java-json.jar"/>
+	<classpathentry kind="lib" path="jar/mysql-connector-java-5.1.18-bin.jar"/>
+	<classpathentry kind="lib" path="jar/org.csstudio.swt.xygraph_2.1.0.201209121540.jar"/>
+	<classpathentry kind="lib" path="jar/org.eclipse.core.commands.jar"/>
+	<classpathentry kind="lib" path="jar/org.eclipse.draw2d_3.5.0.jar"/>
+	<classpathentry kind="lib" path="jar/org.eclipse.jface-3.8.jar"/>
+	<classpathentry kind="lib" path="jar/org.eclipse.osgi.jar"/>
+	<classpathentry kind="lib" path="jar/sqlite-jdbc-3.8.6.jar"/>
+	<classpathentry kind="lib" path="jar/swing2swt.jar"/>
+	<classpathentry kind="lib" path="jar/swt-debug.jar"/>
+	<classpathentry kind="lib" path="jar/swt.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
