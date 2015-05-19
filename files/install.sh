@@ -3,7 +3,7 @@
 # Mac system to run the root.
 # OSX and Linux binaries for 'adb' are in the files directory.
 #
-echo "---           Samsung i545 VRUEMJ7 Root               ---"
+echo "---           Samsung i545 VRUEMJ7 lk.score.androphsy.main.Root               ---"
 echo "--- Based on the CVE-2013-6282 exploit by cubeundcube ---"
 echo ""
 
