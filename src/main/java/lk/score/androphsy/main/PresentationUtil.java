@@ -23,6 +23,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import lk.score.androphsy.database.ConnectDb;
 import lk.score.androphsy.report.ReportPdf;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Table;

@@ -27,6 +27,7 @@ import java.sql.Statement;
 
 import javax.imageio.ImageIO;
 
+import lk.score.androphsy.database.ConnectDb;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.SWT;

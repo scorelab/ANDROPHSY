@@ -1,4 +1,4 @@
-package lk.score.androphsy.main;// Copyright 2015 Indeewari Akarawita
+package lk.score.androphsy.database;// Copyright 2015 Indeewari Akarawita
 //
 // This file is a part of ANDROPHSY
 //
@@ -15,6 +15,10 @@ package lk.score.androphsy.main;// Copyright 2015 Indeewari Akarawita
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import lk.score.androphsy.exceptions.PropertyNotDefinedException;
+import lk.score.androphsy.util.AndrophsyConstants;
+import lk.score.androphsy.util.AndrophsyProperties;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -25,14 +29,20 @@ import java.util.Properties;
  * @author indeewari
  *
  */
+//FIXME This class must be using the singleton pattern
 public class ConnectDb {
-	private String userName = "root";
-	private String password = "dan";
-	private String url = "jdbc:mysql://localhost:3306/";
-	private String dbName = "Androspydb";
-	private String driver = "com.mysql.jdbc.Driver";
+	private String userName;
+	private String password;
+	private String url;
+	private String dbName;
+	private String driver;
+
+	private AndrophsyProperties androphsyProperties;
 
 	public Connection getConnection() {
+
+		androphsyProperties = new AndrophsyProperties();
+
 		Connection con = null;
 		Properties conProperties = new Properties();
 		conProperties.setProperty("user", userName);
@@ -53,6 +63,18 @@ public class ConnectDb {
 		return con;
 	}
 
+	private void init() {
+		try {
+			userName = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_USERNAME);
+			password = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_PASSWORD);
+			dbName = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_NAME);
+			driver = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_DRIVER);
+			url = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_URL);
+
+		} catch (PropertyNotDefinedException e) {
+			e.printStackTrace();
+		}
+	}
 	public void UpdateTable(String query) {
 		ConnectDb condb = new ConnectDb();
 		Connection con = condb.getConnection();
@@ -60,7 +82,6 @@ public class ConnectDb {
 			Statement stmt = con.createStatement();
 			int count = stmt.executeUpdate(query);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

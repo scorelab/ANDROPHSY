@@ -15,6 +15,7 @@ package lk.score.androphsy.main;// Copyright 2015 Indeewari Akarawita
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import lk.score.androphsy.database.ConnectDb;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridLayout;
