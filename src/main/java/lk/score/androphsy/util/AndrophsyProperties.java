@@ -6,22 +6,36 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import lk.score.androphsy.exceptions.PropertyNotDefinedException;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class AndrophsyProperties {
+
+    private final Logger logger = LogManager.getLogger(AndrophsyProperties.class);
+
     private Properties properties = new Properties();
     private InputStream stream = null;
     private static final String ANDROPHSY_PROPERTY_FILE = "androphsy.properties";
 
-    public AndrophsyProperties() {
+    private static AndrophsyProperties androphsyProperties;
+
+    public static AndrophsyProperties getInstance() {
+        if(androphsyProperties == null)
+            androphsyProperties = new AndrophsyProperties();
+
+        return androphsyProperties;
+    }
+
+    private AndrophsyProperties() {
         try {
             ClassLoader loader = Thread.currentThread().getContextClassLoader();
             stream = loader.getResourceAsStream(ANDROPHSY_PROPERTY_FILE);
             properties.load(stream);
             stream.close();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error(e.getMessage());
         }
     }
 

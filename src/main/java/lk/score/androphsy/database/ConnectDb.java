@@ -41,7 +41,7 @@ public class ConnectDb {
 
 	public Connection getConnection() {
 
-		androphsyProperties = new AndrophsyProperties();
+		androphsyProperties = AndrophsyProperties.getInstance();
 		init();
 
 		Connection con = null;
