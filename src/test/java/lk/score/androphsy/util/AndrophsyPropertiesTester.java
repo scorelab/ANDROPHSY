@@ -16,10 +16,10 @@ public class AndrophsyPropertiesTester {
     @Test
     public void testGetProperties() {
         try {
-            androphsyProperties.getProperty(AndrophsyConstants.DATABASE_DRIVER);
             androphsyProperties.getProperty(AndrophsyConstants.DATABASE_USERNAME);
             androphsyProperties.getProperty(AndrophsyConstants.DATABASE_PASSWORD);
             androphsyProperties.getProperty(AndrophsyConstants.DATABASE_URL);
+            androphsyProperties.getProperty(AndrophsyConstants.DATABASE_NAME);
         } catch (PropertyNotDefinedException e) {
             Assert.fail("Exception shouldn't have occurred!!"+ e.getMessage());
         }

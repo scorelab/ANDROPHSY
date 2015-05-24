@@ -35,13 +35,14 @@ public class ConnectDb {
 	private String password;
 	private String url;
 	private String dbName;
-	private String driver;
+	private final String driver = "com.mysql.jdbc.Driver";;
 
 	private AndrophsyProperties androphsyProperties;
 
 	public Connection getConnection() {
 
 		androphsyProperties = new AndrophsyProperties();
+		init();
 
 		Connection con = null;
 		Properties conProperties = new Properties();
@@ -68,7 +69,6 @@ public class ConnectDb {
 			userName = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_USERNAME);
 			password = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_PASSWORD);
 			dbName = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_NAME);
-			driver = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_DRIVER);
 			url = androphsyProperties.getProperty(AndrophsyConstants.DATABASE_URL);
 
 		} catch (PropertyNotDefinedException e) {

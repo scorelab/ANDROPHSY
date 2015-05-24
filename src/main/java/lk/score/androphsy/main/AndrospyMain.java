@@ -52,7 +52,7 @@ public class AndrospyMain {
 	public static void main(String[] args) {
 		Display display = Display.getDefault();
 		shell.setMaximized(true);
-		shell.setText("lk.score.androphsy.main.Androspy");
+		shell.setText("Androspy");
 
 		GridLayout gridLayout = new GridLayout(1, true);
 		shell.setLayout(gridLayout);
