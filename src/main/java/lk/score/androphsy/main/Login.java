@@ -75,7 +75,7 @@ public class Login extends Composite {
 			}
 		});
 		btnLogin.setBounds(166, 169, 91, 29);
-		btnLogin.setText("lk.score.androphsy.main.Login");
+		btnLogin.setText("Login");
 
 		Label lblstatus = new Label(this, SWT.NONE);
 		lblstatus.setAlignment(SWT.CENTER);
@@ -89,7 +89,7 @@ public class Login extends Composite {
 	}
 
 	protected void ButtonAction(String txt) {
-		if (txt.equals("lk.score.androphsy.main.Login")) {
+		if (txt.equals("Login")) {
 			user_name = txtUserName.getText();
 			System.out.println("pass: " + txtPassword.getText());
 			boolean ret = AuthenticateUser(user_name, txtPassword.getText());
@@ -169,7 +169,7 @@ public class Login extends Composite {
 					MessageBox msgbox = new MessageBox(getShell(), SWT.ICON_INFORMATION);
 					msgbox.setMessage("Welcome " + userName + "\n" +
 					                  "Please change default password");
-					msgbox.setText("First lk.score.androphsy.main.Login - Change Password");
+					msgbox.setText("First Login - Change Password");
 					msgbox.open();
 				}
 				return true;
@@ -178,7 +178,7 @@ public class Login extends Composite {
 			AndrospyLog.Logdata(stime, "User " + user_name + " Logging attempt failed");
 			MessageBox msgbox = new MessageBox(getShell(), SWT.ICON_ERROR);
 			msgbox.setMessage("Incorrect credentials \n If you have not sign up please contact Admin");
-			msgbox.setText("lk.score.androphsy.main.Login Fail");
+			msgbox.setText("Login Fail");
 			msgbox.open();
 			return false;
 
