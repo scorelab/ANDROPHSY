@@ -10,7 +10,7 @@ public class AndrophsyPropertiesTester {
 
     @Before
     public void setup() {
-        androphsyProperties = new AndrophsyProperties();
+        androphsyProperties = AndrophsyProperties.getInstance();
     }
 
     @Test

@@ -15,7 +15,8 @@ public class AndrophsyProperties {
 
     private Properties properties = new Properties();
     private InputStream stream = null;
-    private static final String ANDROPHSY_PROPERTY_FILE = "androphsy.properties";
+    private static final String ANDROPHSY_PROPERTY_FILE = "conf/androphsy.properties";
+    private static final String DEFAULT_ANDROPHSY_PROPERTY_FILE = "../conf/androphsy.properties";
 
     private static AndrophsyProperties androphsyProperties;
 
@@ -30,6 +31,10 @@ public class AndrophsyProperties {
         try {
             ClassLoader loader = Thread.currentThread().getContextClassLoader();
             stream = loader.getResourceAsStream(ANDROPHSY_PROPERTY_FILE);
+            if (stream == null) {
+                logger.info("Using the default configuration file (androphsy.properties");
+                stream = loader.getResourceAsStream(DEFAULT_ANDROPHSY_PROPERTY_FILE);
+            }
             properties.load(stream);
             stream.close();
         } catch (FileNotFoundException e) {

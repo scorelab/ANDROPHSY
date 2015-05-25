@@ -1,5 +1,6 @@
 package lk.score.androphsy.indexer.solr;
 
+import lk.score.androphsy.exceptions.PropertyNotDefinedException;
 import lk.score.androphsy.model.FileMetadata;
 import org.apache.solr.client.solrj.SolrServerException;
 
@@ -22,7 +23,7 @@ public class SolrDataModel {
      * @throws IOException
      * @throws SolrServerException
      */
-    public void addMetadata(FileMetadata fileMetadata) throws IOException, SolrServerException {
+    public void addMetadata(FileMetadata fileMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
         indexer.addMetadata(fileMetadata);
     }
 
@@ -32,7 +33,7 @@ public class SolrDataModel {
      * @throws IOException
      * @throws SolrServerException
      */
-    public void updateMetadata(FileMetadata fileMetadata) throws IOException, SolrServerException {
+    public void updateMetadata(FileMetadata fileMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
         indexer.updateMetadata(fileMetadata);
     }
 }
