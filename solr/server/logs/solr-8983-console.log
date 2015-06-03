@@ -1,0 +1,194 @@
+WARNING: System properties and/or JVM args set.  Consider using --dry-run or --exec
+0    [main] INFO  org.eclipse.jetty.server.Server  [   ] – jetty-8.1.10.v20130312
+14   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  [   ] – Deployment monitor /home/sachith/programs/solr/server/contexts at interval 0
+17   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  [   ] – Deployable added: /home/sachith/programs/solr/server/contexts/solr-jetty-context.xml
+878  [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  [   ] – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+916  [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  [   ] – SolrDispatchFilter.init()WebAppClassLoader=817200289@30b57ca1
+926  [main] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – JNDI not configured for solr (NoInitialContextEx)
+926  [main] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – using system property solr.solr.home: /home/sachith/programs/solr/server/solr
+927  [main] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – new SolrResourceLoader for directory: '/home/sachith/programs/solr/server/solr/'
+1012 [main] INFO  org.apache.solr.core.SolrXmlConfig  [   ] – Loading container configuration from /home/sachith/programs/solr/server/solr/solr.xml
+1057 [main] INFO  org.apache.solr.core.CoresLocator  [   ] – Config-defined core root directory: /home/sachith/programs/solr/server/solr
+1071 [main] INFO  org.apache.solr.core.CoreContainer  [   ] – New CoreContainer 1957130308
+1071 [main] INFO  org.apache.solr.core.CoreContainer  [   ] – Loading cores into CoreContainer [instanceDir=/home/sachith/programs/solr/server/solr/]
+1072 [main] INFO  org.apache.solr.core.CoreContainer  [   ] – loading shared library: /home/sachith/programs/solr/server/solr/lib
+1072 [main] WARN  org.apache.solr.core.SolrResourceLoader  [   ] – Can't find (or read) directory to add to classloader: lib (resolved as: /home/sachith/programs/solr/server/solr/lib).
+1081 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting socketTimeout to: 600000
+1082 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting urlScheme to: null
+1086 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting connTimeout to: 60000
+1086 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting maxConnectionsPerHost to: 20
+1086 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting maxConnections to: 10000
+1086 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting corePoolSize to: 0
+1086 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting maximumPoolSize to: 2147483647
+1087 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting maxThreadIdleTime to: 5
+1087 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting sizeOfQueue to: -1
+1087 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting fairnessPolicy to: false
+1087 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  [   ] – Setting useRetries to: false
+1164 [main] INFO  org.apache.solr.update.UpdateShardHandler  [   ] – Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+1166 [main] INFO  org.apache.solr.logging.LogWatcher  [   ] – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+1166 [main] INFO  org.apache.solr.logging.LogWatcher  [   ] – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+1167 [main] INFO  org.apache.solr.core.CoreContainer  [   ] – Node Name: 
+1185 [main] INFO  org.apache.solr.core.CoresLocator  [   ] – Looking for core definitions underneath /home/sachith/programs/solr/server/solr
+1202 [main] INFO  org.apache.solr.core.SolrCore  [   ] – CORE DESCRIPTOR: {name=evidenceCore, config=solrconfig.xml, instanceDir=/home/sachith/programs/solr/server/solr/evidenceCore, loadOnStartup=true, absoluteInstDir=/home/sachith/programs/solr/server/solr/evidenceCore/, schema=schema.xml, transient=false, dataDir=data/}
+1203 [main] INFO  org.apache.solr.core.CoresLocator  [   ] – Found core evidenceCore in /home/sachith/programs/solr/server/solr/evidenceCore/
+1203 [main] INFO  org.apache.solr.core.CoresLocator  [   ] – Found 1 core definitions
+1204 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – new SolrResourceLoader for directory: '/home/sachith/programs/solr/server/solr/evidenceCore/'
+1252 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  [   ] – current version of requestparams : 0
+1260 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  [   ] – Adding specified lib dirs to ClassLoader
+1262 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+1263 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+1263 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+1263 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+1263 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+1263 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+1264 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+1264 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+1264 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+1264 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+1264 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+1264 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+1265 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+1265 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+1265 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+1265 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+1266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+1266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+1266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+1266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+1266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+1266 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+1267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+1267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+1267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+1267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+1267 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+1268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+1268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+1268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+1268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+1268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+1268 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+1269 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/dist/solr-cell-5.1.0.jar' to classloader
+1270 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+1270 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+1270 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+1271 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+1271 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+1271 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+1271 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+1271 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+1272 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/dist/solr-clustering-5.1.0.jar' to classloader
+1272 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+1273 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+1273 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/dist/solr-langid-5.1.0.jar' to classloader
+1274 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+1274 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+1274 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+1274 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+1275 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  [   ] – Adding 'file:/home/sachith/programs/solr/dist/solr-velocity-5.1.0.jar' to classloader
+1419 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  [   ] – Using Lucene MatchVersion: 5.0.0
+1523 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  [   ] – Loaded SolrConfig: solrconfig.xml
+1528 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.schema.ManagedIndexSchemaFactory  [   ] – The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+1531 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  [   ] – Reading Solr Schema from /home/sachith/programs/solr/server/solr/evidenceCore/conf/managed-schema
+1585 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  [   ] – [evidenceCore] Schema name=example-data-driven-schema
+2016 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  [   ] – unique key field: id
+2142 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  [   ] – Reloading exchange rates from file currency.xml
+2148 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.FileExchangeRateProvider  [   ] – Reloading exchange rates from file currency.xml
+2197 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  [   ] – Creating SolrCore 'evidenceCore' using configuration from instancedir /home/sachith/programs/solr/server/solr/evidenceCore/
+2197 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – solr.NRTCachingDirectoryFactory
+2202 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – [evidenceCore] Opening new SolrCore at /home/sachith/programs/solr/server/solr/evidenceCore/, dataDir=/home/sachith/programs/solr/server/solr/evidenceCore/data/
+2203 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.JmxMonitoredMap  [   ] – No JMX servers found, not exposing Solr information with JMX.
+2206 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – [evidenceCore] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+2206 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – [evidenceCore] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+2217 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  [   ] – return new directory for /home/sachith/programs/solr/server/solr/evidenceCore/data
+2217 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – New index directory detected: old=null new=/home/sachith/programs/solr/server/solr/evidenceCore/data/index/
+2217 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  [   ] – return new directory for /home/sachith/programs/solr/server/solr/evidenceCore/data/index
+2226 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – queryResponseWriter : 'velocity' created with startup=lazy 
+2229 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.response.XSLTResponseWriter  [   ] – xsltCacheLifetimeSeconds=5
+2292 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.processor.UpdateRequestProcessorChain  [   ] – creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2332 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – no updateRequestProcessorChain defined as default, creating implicit default
+2350 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  [   ] – xsltCacheLifetimeSeconds=60
+2351 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  [   ] – xsltCacheLifetimeSeconds=60
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  [   ] – xsltCacheLifetimeSeconds=60
+2352 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  [   ] – xsltCacheLifetimeSeconds=60
+2362 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/update/extract' created with startup=lazy 
+2365 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/analysis/field' created with startup=lazy 
+2365 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/analysis/document' created with startup=lazy 
+2367 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/spell' created with startup=lazy 
+2367 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/tvrh' created with startup=lazy 
+2367 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/terms' created with startup=lazy 
+2367 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.PluginBag  [   ] – requestHandler : '/elevate' created with startup=lazy 
+2367 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  [   ] – Registered paths: /admin/logging,/admin/plugins,/admin/system,/admin/segments,/admin/file,/admin/luke,/update,/terms,/stream,/admin/threads,/schema,/query,/replication,/analysis/field,/browse,/admin/ping,/update/json/docs,/analysis/document,/select,/admin/mbeans,/update/csv,/elevate,/get,/update/json,/export,/update/extract,/admin/properties,/tvrh,/spell,/config,/debug/dump
+2369 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2375 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   ] – Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2376 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.update.UpdateLog  [   ] – Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10
+2384 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – Hard AutoCommit: if uncommited for 15000ms; 
+2384 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – Soft AutoCommit: disabled
+2408 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3b7e66e1; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2408 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – newest commit generation = 1
+2417 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  [   ] – Opening Searcher@36783858[evidenceCore] main
+2420 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  [   ] – File-based storage initialized to use dir: /home/sachith/programs/solr/server/solr/evidenceCore/conf
+2420 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  [   ] – Initializing RestManager with initArgs: {storageDir=/home/sachith/programs/solr/server/solr/evidenceCore/conf}
+2426 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  [   ] – Reading _rest_managed.json using file:dir=/home/sachith/programs/solr/server/solr/evidenceCore/conf
+2427 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  [   ] – Initializing 0 registered ManagedResources
+2431 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  [   ] – Initializing spell checkers
+2436 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.spelling.DirectSolrSpellChecker  [   ] – init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2440 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  [   ] – No queryConverter defined, using default converter
+2441 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.component.QueryElevationComponent  [   ] – Loading QueryElevation from: /home/sachith/programs/solr/server/solr/evidenceCore/conf/elevate.xml
+2452 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.ReplicationHandler  [   ] – Commits will be reserved for  10000
+2467 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – QuerySenderListener sending requests to Searcher@36783858[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2468 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – QuerySenderListener done.
+2468 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  [   ] – Loading spell index for spellchecker: default
+2468 [searcherExecutor-6-thread-1] INFO  org.apache.solr.handler.component.SpellCheckComponent  [   ] – Loading spell index for spellchecker: wordbreak
+2468 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – [evidenceCore] Registered new searcher Searcher@36783858[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2469 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  [   ] – registering core: evidenceCore
+2469 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  [   ] – user.dir=/home/sachith/programs/solr/server
+2470 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  [   ] – SolrDispatchFilter.init() done
+2490 [main] INFO  org.eclipse.jetty.server.AbstractConnector  [   ] – Started SocketConnector@0.0.0.0:8983
+5677 [qtp56099429-18] INFO  org.apache.solr.servlet.SolrDispatchFilter  [   ] – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1433322556960&wt=json} status=0 QTime=5 
+5720 [qtp56099429-18] INFO  org.apache.solr.servlet.SolrDispatchFilter  [   ] – [admin] webapp=null path=/admin/info/system params={_=1433322557000&wt=json} status=0 QTime=7 
+7986 [qtp56099429-18] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  [   evidenceCore] – Can not find: admin-extra.menu-top.html [/home/sachith/programs/solr/server/solr/evidenceCore/conf/admin-extra.menu-top.html]
+7987 [qtp56099429-19] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  [   evidenceCore] – Can not find: admin-extra.menu-bottom.html [/home/sachith/programs/solr/server/solr/evidenceCore/conf/admin-extra.menu-bottom.html]
+7987 [qtp56099429-18] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&_=1433322559270&contentType=text/html;charset%3Dutf-8} status=404 QTime=3 
+7987 [qtp56099429-19] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&_=1433322559274&contentType=text/html;charset%3Dutf-8} status=404 QTime=1 
+8034 [qtp56099429-16] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  [   evidenceCore] – Can not find: admin-extra.html [/home/sachith/programs/solr/server/solr/evidenceCore/conf/admin-extra.html]
+8035 [qtp56099429-16] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1433322559305} status=404 QTime=1 
+8036 [qtp56099429-18] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/admin/luke params={numTerms=0&_=1433322559293&show=index&wt=json} status=0 QTime=1 
+8037 [qtp56099429-12] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/replication params={command=details&_=1433322559300&wt=json} status=0 QTime=3 
+8039 [qtp56099429-19] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/admin/system params={_=1433322559303&wt=json} status=0 QTime=5 
+8042 [qtp56099429-15] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/admin/ping params={action=status&_=1433322559307&wt=json} status=503 QTime=3 
+10838 [qtp56099429-18] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={indent=true&q=*:*&_=1433322562111&wt=json} hits=0 status=0 QTime=13 
+14100 [qtp56099429-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  [   evidenceCore] – [evidenceCore] webapp=/solr path=/update params={wt=javabin&version=2} {add=[fc205478-9788-4e37-a8c5-5ae86261e764 (1502947642256130048)]} 0 113
+14100 [commitScheduler-9-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+14144 [commitScheduler-9-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  [   evidenceCore] – Opening Searcher@77fef512[evidenceCore] main
+14146 [commitScheduler-9-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – end_commit_flush
+14146 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – QuerySenderListener sending requests to Searcher@77fef512[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1)))}
+14146 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – QuerySenderListener done.
+14146 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – [evidenceCore] Registered new searcher Searcher@77fef512[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1)))}
+16638 [qtp56099429-18] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={indent=true&q=*:*&_=1433322567923&wt=json} hits=1 status=0 QTime=2 
+29099 [commitScheduler-8-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+29143 [commitScheduler-8-thread-1] INFO  org.apache.solr.core.SolrCore  [   evidenceCore] – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3b7e66e1; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3b7e66e1; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+29143 [commitScheduler-8-thread-1] INFO  org.apache.solr.core.SolrCore  [   evidenceCore] – newest commit generation = 2
+29146 [commitScheduler-8-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – end_commit_flush
+33717 [qtp56099429-17] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={start=0&q=sachith&wt=javabin&version=2&defType=edismax} hits=1 status=0 QTime=12 
+131392 [qtp56099429-13] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={start=0&q=sachith&wt=javabin&version=2&defType=edismax} hits=1 status=0 QTime=1 
+151378 [qtp56099429-17] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={start=0&q=sachith&wt=javabin&version=2&defType=edismax} hits=1 status=0 QTime=1 
+170719 [qtp56099429-20] INFO  org.apache.solr.update.processor.LogUpdateProcessor  [   evidenceCore] – [evidenceCore] webapp=/solr path=/update params={wt=javabin&version=2} {add=[299533a1-2992-4423-8f0e-02c18525d7ac (1502947806551212032)]} 0 3
+170720 [commitScheduler-9-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+170733 [commitScheduler-9-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  [   evidenceCore] – Opening Searcher@3e736d04[evidenceCore] main
+170734 [commitScheduler-9-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – end_commit_flush
+170737 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – QuerySenderListener sending requests to Searcher@3e736d04[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1) Uninverting(_1(5.1.0):C1)))}
+170737 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – QuerySenderListener done.
+170738 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  [   ] – [evidenceCore] Registered new searcher Searcher@3e736d04[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1) Uninverting(_1(5.1.0):C1)))}
+175262 [qtp56099429-16] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={start=0&q=sachith&wt=javabin&version=2&defType=edismax} hits=2 status=0 QTime=2 
+185719 [commitScheduler-8-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+185753 [commitScheduler-8-thread-1] INFO  org.apache.solr.core.SolrCore  [   evidenceCore] – SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3b7e66e1; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3b7e66e1; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+185753 [commitScheduler-8-thread-1] INFO  org.apache.solr.core.SolrCore  [   evidenceCore] – newest commit generation = 3
+185755 [commitScheduler-8-thread-1] INFO  org.apache.solr.update.UpdateHandler  [   evidenceCore] – end_commit_flush
+189698 [qtp56099429-13] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={start=0&q=ssds&wt=javabin&version=2&defType=edismax} hits=0 status=0 QTime=1 
+200168 [qtp56099429-17] INFO  org.apache.solr.core.SolrCore.Request  [   evidenceCore] – [evidenceCore] webapp=/solr path=/select params={start=0&q=hello&wt=javabin&version=2&defType=edismax} hits=1 status=0 QTime=2 
