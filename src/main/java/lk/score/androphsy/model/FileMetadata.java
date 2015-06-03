@@ -6,6 +6,9 @@ public class FileMetadata {
     private String content;
     private String id;
 
+    //solr based field
+    private String _version_;
+
     public FileMetadata() {
     }
 
@@ -42,5 +45,13 @@ public class FileMetadata {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String get_version_() {
+        return _version_;
+    }
+
+    public void set_version_(String _version_) {
+        this._version_ = _version_;
     }
 }

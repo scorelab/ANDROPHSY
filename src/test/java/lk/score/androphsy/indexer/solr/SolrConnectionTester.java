@@ -27,8 +27,8 @@ public class SolrConnectionTester {
 
         //creating dummy data
 		FileMetadata fileMetadata = new FileMetadata();
-		fileMetadata.setContent("Hello World");
-		fileMetadata.setFilename("Hello.txt");
+		fileMetadata.setContent("hello world To Test the Content");
+		fileMetadata.setFilename("hello.txt");
 		fileMetadata.setOwner("Sachith");
 
         //adding it to the solr database

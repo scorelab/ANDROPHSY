@@ -48,6 +48,7 @@ public class SolrIndexer {
 
         metadataDoc.addField(MetadataFields.FILE_NAME, fileMetadata.getFilename());
         metadataDoc.addField(MetadataFields.OWNER, fileMetadata.getOwner());
+        metadataDoc.addField(MetadataFields.CONTENT, fileMetadata.getContent());
 
         metadataClient.add(metadataDoc,1);
 
