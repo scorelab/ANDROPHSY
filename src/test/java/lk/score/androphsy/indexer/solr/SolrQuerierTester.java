@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.*;
 
 public class SolrQuerierTester {
     private final Logger log = LogManager.getLogger(SolrQuerierTester.class);
@@ -30,6 +30,31 @@ public class SolrQuerierTester {
             }
         } catch (SolrServerException e) {
             e.printStackTrace();
+        } catch (PropertyNotDefinedException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void testHighlightedQuerying() {
+        String dummyQuery = "colombo";
+        try {
+            final Map<String, Set<String>> highlightedQuery = solrQuerier.getHighlightedQuery(dummyQuery);
+
+            Iterator it = highlightedQuery.entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry<String,Set<String>> pair = (Map.Entry)it.next();
+                log.info("Filename: " + pair.getKey());
+                for (String matchingField : pair.getValue()) {
+                    log.info("Field: "+matchingField);
+                }
+                log.info("\n");
+                it.remove(); // avoids a ConcurrentModificationException
+            }
+        } catch (SolrServerException e) {
+                e.printStackTrace();
         } catch (PropertyNotDefinedException e) {
             e.printStackTrace();
         } catch (IOException e) {

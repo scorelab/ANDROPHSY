@@ -7,6 +7,8 @@ import org.apache.solr.client.solrj.SolrServerException;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * This class is used for all the interactions between the system and the SOLR database
@@ -50,6 +52,10 @@ public class SolrDataModel implements IDataModel{
      */
     public List<FileMetadata> getResultsFromQueryString(String queryString) throws SolrServerException, PropertyNotDefinedException, IOException {
         return querier.querySolr(queryString);
+    }
+
+    public Map<String, Set<String>> getMatchingFieldsFromQury(String queryString) throws SolrServerException, PropertyNotDefinedException, IOException {
+        return querier.getHighlightedQuery(queryString);
     }
 
 

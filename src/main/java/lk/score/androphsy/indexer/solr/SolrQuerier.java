@@ -1,12 +1,8 @@
 package lk.score.androphsy.indexer.solr;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import lk.score.androphsy.exceptions.PropertyNotDefinedException;
 
@@ -74,4 +70,42 @@ public class SolrQuerier {
         FileMetadata fileMetadata = mapper.readValue(String.valueOf(document), FileMetadata.class);
         return fileMetadata;
     }
+
+	public Map<String, Set<String>> getHighlightedQuery(String queryString) throws PropertyNotDefinedException, SolrServerException,IOException {
+		SolrQuery query = new SolrQuery();
+		query.setQuery(queryString);
+		query.setHighlight(true).setHighlightSnippets(1); //set other params as
+		query.setParam("hl.fl", "*");
+
+		//execute the query
+		HttpSolrServer server = solrClientFactory.createSolrFileStoreClient();
+		QueryResponse solrResponse = server.query(query);
+
+		final SolrDocumentList results = solrResponse.getResults();
+
+		if(results.size() <1)
+			return null;
+
+		//add the results to a id-> Object Map
+		Map<String, FileMetadata> fileMetadataHashMap = new HashMap<String, FileMetadata>();
+		FileMetadata tempFileMetadata = new FileMetadata();
+		for (Map doc : results) {
+			tempFileMetadata = convertJsonToPojo(new JSONObject(doc));
+			fileMetadataHashMap.put(tempFileMetadata.getId(), tempFileMetadata);
+		}
+
+
+		//get the highlighted fields for each file
+		Map<String, Set<String>> resultsMap = new HashMap<String, Set<String>>();
+
+		//returned highlighted MAP
+		Map<String, List<String>> stringListMap = new HashMap<String, List<String>>();
+
+		for (Map.Entry<String,FileMetadata> entry : fileMetadataHashMap.entrySet()) {
+			stringListMap = solrResponse.getHighlighting().get(entry.getKey());
+			resultsMap.put(entry.getValue().getFilename(),stringListMap.keySet());
+		}
+
+		return resultsMap;
+	}
 }

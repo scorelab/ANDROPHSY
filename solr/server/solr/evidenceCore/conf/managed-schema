@@ -401,18 +401,18 @@
 <!-- Customized portion-->
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="long" indexed="true" stored="true"/>
-  <field name="content" type="strings" multiValued="false" indexed="true" stored="true"/>
+  <field name="content" type="substring_text" multiValued="false" indexed="true" stored="true"/>
 
-  <field name="filename" type="strings" multiValued="false" indexed="true" stored="true"/>
+  <field name="filename" type="substring_text" multiValued="false" indexed="true" stored="true"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
-  <field name="owner" type="strings" multiValued="false" indexed="true" stored="true"/>
+  <field name="owner" type="substring_text" multiValued="false" indexed="true" stored="true"/>
 
-<!-- Allowing substring searches-->
+<!-- Allowing substring searches
  <field name="textualContent" type="substring_text" indexed="true" stored="true" multiValued="true"/>
 
     <copyField source="filename" dest="textualContent" />
     <copyField source="content" dest="textualContent" />
-
+-->
 <fieldType name="substring_text" class="solr.TextField">
     <analyzer type="index">
         <tokenizer class="solr.LowerCaseTokenizerFactory"/>
