@@ -54,6 +54,14 @@ public class SolrDataModel implements IDataModel{
         return querier.querySolr(queryString);
     }
 
+    /**
+     * Returns only the matching list of fields for a given query
+     * @param queryString
+     * @return
+     * @throws SolrServerException
+     * @throws PropertyNotDefinedException
+     * @throws IOException
+     */
     public Map<String, Set<String>> getMatchingFieldsFromQury(String queryString) throws SolrServerException, PropertyNotDefinedException, IOException {
         return querier.getHighlightedQuery(queryString);
     }
