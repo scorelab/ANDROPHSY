@@ -10,6 +10,7 @@ import org.apache.solr.client.solrj.impl.HttpSolrServer;
 import org.apache.solr.common.SolrInputDocument;
 
 import java.io.IOException;
+import java.util.Map;
 import java.util.UUID;
 
 public class SolrIndexer {
@@ -21,12 +22,12 @@ public class SolrIndexer {
         solrClientFactory = new SolrClientFactory();
     }
 
-    public void addMetadata(FileMetadata metadata) throws IOException, SolrServerException, PropertyNotDefinedException {
-        addData(metadata);
+    public void addMetadata(FileMetadata metadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
+        addData(metadata,customMetadata);
     }
 
-    public void updateMetadata(FileMetadata metadata) throws IOException, SolrServerException, PropertyNotDefinedException {
-        addData(metadata);
+    public void updateMetadata(FileMetadata metadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
+        addData(metadata,customMetadata);
     }
     /**
      * Adds data to Apache Solr
@@ -34,7 +35,7 @@ public class SolrIndexer {
      * @throws IOException
      * @throws SolrServerException
      */
-    private void addData(FileMetadata fileMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
+    private void addData(FileMetadata fileMetadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
         HttpSolrServer metadataClient = solrClientFactory.createSolrFileStoreClient();
 
         SolrInputDocument metadataDoc = new SolrInputDocument();
@@ -50,6 +51,18 @@ public class SolrIndexer {
         metadataDoc.addField(MetadataFields.OWNER, fileMetadata.getOwner());
         metadataDoc.addField(MetadataFields.CONTENT, fileMetadata.getContent());
 
+        if(customMetadata!=null) {
+            Object[] metadata_keys = customMetadata.keySet().toArray();
+            String key = "";
+            for (int i = 0; i < metadata_keys.length; i++) {
+                key = (String) metadata_keys[i];
+                if (key.equals("id"))
+                    continue;
+                metadataDoc.addField(key,
+                        customMetadata.get(key)
+                );
+            }
+        }
         metadataClient.add(metadataDoc,1);
 
         logger.info("Indexed Metadata file: "+ fileMetadata.getFilename());

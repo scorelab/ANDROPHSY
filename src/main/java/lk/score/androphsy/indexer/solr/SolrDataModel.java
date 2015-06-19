@@ -28,8 +28,8 @@ public class SolrDataModel implements IDataModel{
      * @throws IOException
      * @throws SolrServerException
      */
-    public void addMetadata(FileMetadata fileMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
-        indexer.addMetadata(fileMetadata);
+    public void addMetadata(FileMetadata fileMetadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
+        indexer.addMetadata(fileMetadata,customMetadata);
     }
 
     /**
@@ -38,8 +38,8 @@ public class SolrDataModel implements IDataModel{
      * @throws IOException
      * @throws SolrServerException
      */
-    public void updateMetadata(FileMetadata fileMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
-        indexer.updateMetadata(fileMetadata);
+    public void updateMetadata(FileMetadata fileMetadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException {
+        indexer.updateMetadata(fileMetadata,customMetadata);
     }
 
     /**

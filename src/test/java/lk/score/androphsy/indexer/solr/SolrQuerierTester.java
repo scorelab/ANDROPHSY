@@ -39,7 +39,7 @@ public class SolrQuerierTester {
 
     @Test
     public void testHighlightedQuerying() {
-        String dummyQuery = "colombo";
+        String dummyQuery = "printf";
         try {
             final Map<String, Set<String>> highlightedQuery = solrQuerier.getHighlightedQuery(dummyQuery);
 

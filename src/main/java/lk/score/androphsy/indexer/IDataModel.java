@@ -10,9 +10,9 @@ import java.util.Map;
 import java.util.Set;
 
 public interface IDataModel {
-    void addMetadata(FileMetadata metadata) throws IOException, SolrServerException, PropertyNotDefinedException;
+    void addMetadata(FileMetadata metadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException;
 
-    void updateMetadata(FileMetadata metadata) throws IOException, SolrServerException, PropertyNotDefinedException;
+    void updateMetadata(FileMetadata metadata,Map<String,String> customMetadata) throws IOException, SolrServerException, PropertyNotDefinedException;
 
     List<FileMetadata> getResultsFromQueryString(String queryString) throws SolrServerException, PropertyNotDefinedException, IOException;
 
