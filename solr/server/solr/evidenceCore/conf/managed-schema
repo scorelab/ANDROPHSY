@@ -51,6 +51,15 @@
   <fieldType name="random" class="solr.RandomSortField" indexed="true"/>
   <fieldType name="string" class="solr.StrField" sortMissingLast="true"/>
   <fieldType name="strings" class="solr.StrField" multiValued="true" sortMissingLast="true"/>
+  <fieldType name="substring_text" class="solr.TextField">
+    <analyzer type="index">
+      <tokenizer class="solr.LowerCaseTokenizerFactory"/>
+      <filter class="solr.NGramFilterFactory" maxGramSize="15" minGramSize="3"/>
+    </analyzer>
+    <analyzer type="query">
+      <tokenizer class="solr.LowerCaseTokenizerFactory"/>
+    </analyzer>
+  </fieldType>
   <fieldType name="tdate" class="solr.TrieDateField" precisionStep="6" positionIncrementGap="0"/>
   <fieldType name="tdates" class="solr.TrieDateField" precisionStep="6" multiValued="true" positionIncrementGap="0"/>
   <fieldType name="tdouble" class="solr.TrieDoubleField" precisionStep="8" positionIncrementGap="0"/>
@@ -397,34 +406,14 @@
   <fieldType name="tints" class="solr.TrieIntField" precisionStep="8" multiValued="true" positionIncrementGap="0"/>
   <fieldType name="tlong" class="solr.TrieLongField" precisionStep="8" positionIncrementGap="0"/>
   <fieldType name="tlongs" class="solr.TrieLongField" precisionStep="8" multiValued="true" positionIncrementGap="0"/>
-
-<!-- Customized portion-->
   <field name="_text_" type="text_general" multiValued="true" indexed="true" stored="false"/>
   <field name="_version_" type="long" indexed="true" stored="true"/>
   <field name="content" type="substring_text" multiValued="false" indexed="true" stored="true"/>
-
   <field name="filename" type="substring_text" multiValued="false" indexed="true" stored="true"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
   <field name="owner" type="substring_text" multiValued="false" indexed="true" stored="true"/>
 
-<!-- Allowing substring searches
- <field name="textualContent" type="substring_text" indexed="true" stored="true" multiValued="true"/>
-
-    <copyField source="filename" dest="textualContent" />
-    <copyField source="content" dest="textualContent" />
--->
-<fieldType name="substring_text" class="solr.TextField">
-    <analyzer type="index">
-        <tokenizer class="solr.LowerCaseTokenizerFactory"/>
-        <filter class="solr.NGramFilterFactory" minGramSize="3" maxGramSize="15"/>
-    </analyzer>
-    <analyzer type="query">
-        <tokenizer class="solr.LowerCaseTokenizerFactory"/>
-    </analyzer>
-</fieldType>
-
-
-
+  <dynamicField name="*" type="substring_text" indexed="true" stored="true"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>
   <dynamicField name="*_descendent_path" type="descendent_path" indexed="true" stored="true"/>
   <dynamicField name="*_ancestor_path" type="ancestor_path" indexed="true" stored="true"/>
