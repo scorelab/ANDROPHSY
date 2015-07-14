@@ -20,6 +20,7 @@ public class SolrDataModel implements IDataModel{
 
     public SolrDataModel() {
         this.indexer = new SolrIndexer();
+        this.querier = new SolrQuerier();
     }
 
     /**
@@ -63,7 +64,8 @@ public class SolrDataModel implements IDataModel{
      * @throws IOException
      */
     public Map<String, Set<String>> getMatchingFieldsFromQury(String queryString) throws SolrServerException, PropertyNotDefinedException, IOException {
-        return querier.getHighlightedQuery(queryString);
+        final Map<String, Set<String>> highlightedQuery = querier.getHighlightedQuery(queryString);
+        return highlightedQuery;
     }
 
 

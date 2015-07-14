@@ -21,6 +21,9 @@ import java.io.InputStreamReader;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
+import java.util.Map;
+import java.util.Set;
+
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
@@ -103,6 +106,45 @@ public class TableComposite extends Composite {
 			}
 			titem.setText(values);
 			table.setLinesVisible(true);
+		}
+	}
+
+	/**
+	 * populates the results table with the SOLR results
+	 * @param results
+	 * @throws SQLException
+	 */
+	public void populate(Map<String,Set<String>> results) throws SQLException {
+		if(results.size() < 1)
+			return;
+		table.removeAll();
+		table.setItemCount(0);
+		TableColumn cols[] = table.getColumns();
+		for (TableColumn c : cols) {
+			c.dispose();
+		}
+
+		final int no_columns = 2;
+		final String[] columnLabels = {"Doc id", "Matching hex_values"};
+
+		for (int i = 0; i < no_columns; i++) {
+			TableColumn tcol = new TableColumn(table, SWT.NONE);
+			tcol.setText(columnLabels[i]);
+			tcol.setWidth(100);
+		}
+
+		String values[] = new String[no_columns];
+
+		for (String key : results.keySet()) {
+			TableItem titem = new TableItem(table, SWT.NONE);
+			for (int i = 1; i <= no_columns; i++) {
+				values[(i - 1)] = key;
+			}
+			values[0] = key;
+			values[1] = results.get(key).toString();
+			titem.setText(values);
+			table.setLinesVisible(true);
+
 		}
 	}
 

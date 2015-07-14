@@ -15,12 +15,18 @@ package lk.score.androphsy.main;// Copyright 2015 Indeewari Akarawita
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Map;
+import java.util.Set;
 
 import lk.score.androphsy.database.ConnectDb;
+import lk.score.androphsy.exceptions.PropertyNotDefinedException;
+import lk.score.androphsy.indexer.solr.SolrDataModel;
+import org.apache.solr.client.solrj.SolrServerException;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Text;
@@ -46,6 +52,7 @@ public class Search extends Composite {
 	private TableComposite tblcmp;
 	private Label lblTextSearch;
 	private Button btnCaseSensitive;
+	private SolrDataModel solrConnection;
 
 	/**
 	 * Create the composite.
@@ -60,7 +67,7 @@ public class Search extends Composite {
 		lblTextSearch = new Label(this, SWT.NONE);
 		lblTextSearch.setFont(SWTResourceManager.getFont("Ubuntu", 14, SWT.NORMAL));
 		lblTextSearch.setLayoutData(new GridData(SWT.CENTER, SWT.FILL, false, false, 3, 1));
-		lblTextSearch.setText("Text lk.score.androphsy.main.Search");
+		lblTextSearch.setText("Text Search");
 
 		new Label(this, SWT.NONE);
 		new Label(this, SWT.NONE);
@@ -104,7 +111,7 @@ public class Search extends Composite {
 		GridData gd_btnSearch = new GridData(SWT.LEFT, SWT.CENTER, false, false, 1, 1);
 		gd_btnSearch.widthHint = 94;
 		btnSearch.setLayoutData(gd_btnSearch);
-		btnSearch.setText("lk.score.androphsy.main.Search");
+		btnSearch.setText("Search");
 		new Label(this, SWT.NONE);
 
 		btnCaseSensitive = new Button(this, SWT.CHECK);
@@ -117,21 +124,27 @@ public class Search extends Composite {
 
 		tblcmp = new TableComposite(composite, SWT.NONE);
 		stacklayout.topControl = tblcmp;
+
+		//Solr
+		solrConnection = new SolrDataModel();
 	}
 
-	private void search(String type, String srch) {
+	private void search(String type, String searchString) {
 		boolean bcasesensitive = false;
 		bcasesensitive = btnCaseSensitive.getSelection();
 		try {
-			System.out.println("lk.score.androphsy.main.Search  >> " + type + " / " + srch);
+			System.out.println("Search  >> " + type + " / " + searchString);
 			String query = "";
 			Connection con = new ConnectDb().getConnection();
 			Statement stmt = con.createStatement();
 
+			// incorperating the solr search to the type keyword
 			if (type.equals("keyword")) {
 				tblcmp.setKeyword(true);
 				tblcmp.setHexVisible(true);
-				tblcmp.readOffset(srch, btnCaseSensitive.getSelection());
+				tblcmp.readOffset(searchString, btnCaseSensitive.getSelection());
+				final Map<String, Set<String>> matchingFieldsFromQuery = solrConnection.getMatchingFieldsFromQury(searchString);
+				tblcmp.populate(matchingFieldsFromQuery);
 
 			} else if (type.equals("telephone number")) {
 				stacklayout.topControl = tblcmp;
@@ -142,7 +155,7 @@ public class Search extends Composite {
 				                " AND device_id = " +
 				                AndrospyMain.gb_DeviceId +
 				                " AND contact_no like '%" +
-				                srch +
+				                searchString +
 				                "%'" +
 				                " UNION " +
 				                "SELECT CASE " +
@@ -158,7 +171,7 @@ public class Search extends Composite {
 				                " contact_no, name, date FROM Event_Log WHERE case_id = " +
 				                AndrospyMain.gb_CaseId +
 				                " AND device_id = " +
-				                AndrospyMain.gb_DeviceId + " AND contact_no like '%" + srch + "%'";
+				                AndrospyMain.gb_DeviceId + " AND contact_no like '%" + searchString + "%'";
 			} else if (type.equals("email address")) {
 				stacklayout.topControl = tblcmp;
 				query =
@@ -173,7 +186,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, toaddress AS 'Remote Part', datesent, datereceive" +
@@ -184,7 +197,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, ccaddress AS 'Remote Part', datesent, datereceive" +
@@ -195,7 +208,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, replytoaddress AS 'Remote Part', datesent, datereceive" +
@@ -207,7 +220,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, bccaddress AS 'Remote Part', datesent, datereceive" +
@@ -217,7 +230,7 @@ public class Search extends Composite {
 				if (bcasesensitive) {
 					query += "COLLATE latin1_general_cs";
 				}
-				query += " like '%" + srch + "%'";
+				query += " like '%" + searchString + "%'";
 
 			} else if (type.equals("contact name")) {
 				stacklayout.topControl = tblcmp;
@@ -231,7 +244,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT CASE " +
@@ -252,7 +265,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, fromaddress AS 'Remote Party', datereceive AS 'Timestamp'" +
@@ -264,7 +277,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, toaddress AS 'Remote Party', datereceive AS 'Timestamp'" +
@@ -275,7 +288,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, ccaddress AS 'Remote Party', datereceive AS 'Timestamp'" +
@@ -286,7 +299,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, replytoaddress AS 'Remote Party', datereceive AS 'Timestamp'" +
@@ -298,7 +311,7 @@ public class Search extends Composite {
 				}
 				query +=
 				         " like '%" +
-				                 srch +
+				                 searchString +
 				                 "%'" +
 				                 " UNION " +
 				                 "SELECT 'Gmail' AS type, bccaddress AS 'Remote Party', datereceive AS 'Timestamp'" +
@@ -308,7 +321,7 @@ public class Search extends Composite {
 				if (bcasesensitive) {
 					query += "COLLATE latin1_general_cs";
 				}
-				query += " like '%" + srch + "%'";
+				query += " like '%" + searchString + "%'";
 
 			} else if (type.equals("phonography")) {
 				query =
@@ -357,6 +370,12 @@ public class Search extends Composite {
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (PropertyNotDefinedException e) {
+			e.printStackTrace();
+		} catch (SolrServerException e) {
 			e.printStackTrace();
 		}
 
