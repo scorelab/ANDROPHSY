@@ -7,10 +7,10 @@ ANDROPHSY is an opensource forensic tool for Android smartphones that helps digi
 - [x]	Evidence presentation
 
 # License information
-Please read license agreement carefully [here](https://github.com/scorelab/lk.score.androphsy.main.Androspy/blob/master/LICENSE).
+Please read license agreement carefully [here](https://github.com/scorelab/Androspy/blob/master/LICENSE).
 
 # Disclaimer notice
-Before go further from this point please read and understand disclaimer notice carefully available [here](https://github.com/scorelab/lk.score.androphsy.main.Androspy/blob/master/disclaimer.txt).
+Before go further from this point please read and understand disclaimer notice carefully available [here](https://github.com/scorelab/Androspy/blob/master/disclaimer.txt).
 
 # How to run ANDROPHSY project
 This section describes how to setup development environment for ANDROPHSY. Currently ANDROPHSY is compatible with Linux platform only. It was implemented using Java language as an Eclipse project and successfully tested on Ubuntu 12.04 LTS. 
