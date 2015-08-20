@@ -1,0 +1,333 @@
+INFO  - 2015-06-03 08:42:22.845; [   ] org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2015-06-03 08:42:22.861; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/sachith/programs/solr/server/contexts at interval 0
+INFO  - 2015-06-03 08:42:22.864; [   ] org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/sachith/programs/solr/server/contexts/solr-jetty-context.xml
+INFO  - 2015-06-03 08:42:23.724; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2015-06-03 08:42:23.761; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()WebAppClassLoader=1527334658@5b094702
+INFO  - 2015-06-03 08:42:23.771; [   ] org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2015-06-03 08:42:23.771; [   ] org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /home/sachith/programs/solr/server/solr
+INFO  - 2015-06-03 08:42:23.772; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/sachith/programs/solr/server/solr/'
+INFO  - 2015-06-03 08:42:23.858; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /home/sachith/programs/solr/server/solr/solr.xml
+INFO  - 2015-06-03 08:42:23.905; [   ] org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /home/sachith/programs/solr/server/solr
+INFO  - 2015-06-03 08:42:23.920; [   ] org.apache.solr.core.CoreContainer; New CoreContainer 482065457
+INFO  - 2015-06-03 08:42:23.920; [   ] org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/home/sachith/programs/solr/server/solr/]
+INFO  - 2015-06-03 08:42:23.921; [   ] org.apache.solr.core.CoreContainer; loading shared library: /home/sachith/programs/solr/server/solr/lib
+WARN  - 2015-06-03 08:42:23.921; [   ] org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: lib (resolved as: /home/sachith/programs/solr/server/solr/lib).
+INFO  - 2015-06-03 08:42:23.931; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 600000
+INFO  - 2015-06-03 08:42:23.931; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2015-06-03 08:42:23.935; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 60000
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnections to: 10000
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2015-06-03 08:42:23.936; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2015-06-03 08:42:23.937; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting useRetries to: false
+INFO  - 2015-06-03 08:42:24.014; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2015-06-03 08:42:24.015; [   ] org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2015-06-03 08:42:24.016; [   ] org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2015-06-03 08:42:24.017; [   ] org.apache.solr.core.CoreContainer; Node Name: 
+INFO  - 2015-06-03 08:42:24.035; [   ] org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /home/sachith/programs/solr/server/solr
+INFO  - 2015-06-03 08:42:24.049; [   ] org.apache.solr.core.CoreDescriptor; CORE DESCRIPTOR: {name=fileMetadataCore, config=solrconfig.xml, instanceDir=/home/sachith/programs/solr/server/solr/fileMetadataCore, loadOnStartup=true, absoluteInstDir=/home/sachith/programs/solr/server/solr/fileMetadataCore/, schema=schema.xml, transient=false, dataDir=data/}
+INFO  - 2015-06-03 08:42:24.050; [   ] org.apache.solr.core.CorePropertiesLocator; Found core fileMetadataCore in /home/sachith/programs/solr/server/solr/fileMetadataCore/
+INFO  - 2015-06-03 08:42:24.053; [   ] org.apache.solr.core.CoreDescriptor; CORE DESCRIPTOR: {name=evidenceCore, config=solrconfig.xml, instanceDir=/home/sachith/programs/solr/server/solr/evidenceCore, loadOnStartup=true, absoluteInstDir=/home/sachith/programs/solr/server/solr/evidenceCore/, schema=schema.xml, transient=false, dataDir=data/}
+INFO  - 2015-06-03 08:42:24.053; [   ] org.apache.solr.core.CorePropertiesLocator; Found core evidenceCore in /home/sachith/programs/solr/server/solr/evidenceCore/
+INFO  - 2015-06-03 08:42:24.054; [   ] org.apache.solr.core.CorePropertiesLocator; Found 2 core definitions
+INFO  - 2015-06-03 08:42:24.055; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/sachith/programs/solr/server/solr/fileMetadataCore/'
+INFO  - 2015-06-03 08:42:24.056; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/sachith/programs/solr/server/solr/evidenceCore/'
+INFO  - 2015-06-03 08:42:24.117; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-06-03 08:42:24.117; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : 0
+INFO  - 2015-06-03 08:42:24.125; [   ] org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2015-06-03 08:42:24.125; [   ] org.apache.solr.core.SolrConfig; Adding specified lib dirs to ClassLoader
+INFO  - 2015-06-03 08:42:24.127; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2015-06-03 08:42:24.127; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+INFO  - 2015-06-03 08:42:24.127; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+INFO  - 2015-06-03 08:42:24.127; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.128; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.129; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.130; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.131; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.132; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+INFO  - 2015-06-03 08:42:24.133; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.134; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.135; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-cell-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.135; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-cell-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.137; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.137; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.137; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2015-06-03 08:42:24.137; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+INFO  - 2015-06-03 08:42:24.137; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.137; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+INFO  - 2015-06-03 08:42:24.138; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.138; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.138; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2015-06-03 08:42:24.138; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+INFO  - 2015-06-03 08:42:24.138; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.138; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.139; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2015-06-03 08:42:24.139; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+INFO  - 2015-06-03 08:42:24.139; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.139; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.140; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-clustering-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.140; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-clustering-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.159; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2015-06-03 08:42:24.159; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.159; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+INFO  - 2015-06-03 08:42:24.160; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.160; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-langid-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.160; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.160; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-langid-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.160; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-velocity-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.161; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+INFO  - 2015-06-03 08:42:24.162; [   ] org.apache.solr.core.SolrResourceLoader; Adding 'file:/home/sachith/programs/solr/dist/solr-velocity-5.1.0.jar' to classloader
+INFO  - 2015-06-03 08:42:24.256; [   ] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.0.0
+INFO  - 2015-06-03 08:42:24.256; [   ] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.0.0
+INFO  - 2015-06-03 08:42:24.374; [   ] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-06-03 08:42:24.374; [   ] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+WARN  - 2015-06-03 08:42:24.378; [   ] org.apache.solr.schema.ManagedIndexSchemaFactory; The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+INFO  - 2015-06-03 08:42:24.382; [   ] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /home/sachith/programs/solr/server/solr/fileMetadataCore/conf/managed-schema
+INFO  - 2015-06-03 08:42:24.382; [   ] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /home/sachith/programs/solr/server/solr/evidenceCore/conf/managed-schema
+INFO  - 2015-06-03 08:42:24.433; [   ] org.apache.solr.schema.IndexSchema; [evidenceCore] Schema name=example-data-driven-schema
+INFO  - 2015-06-03 08:42:24.434; [   ] org.apache.solr.schema.IndexSchema; [fileMetadataCore] Schema name=example-data-driven-schema
+INFO  - 2015-06-03 08:42:24.817; [   ] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-06-03 08:42:24.817; [   ] org.apache.solr.schema.IndexSchema; unique key field: id
+WARN  - 2015-06-03 08:42:24.818; [   ] org.apache.solr.schema.IndexSchema; Field textualContent is not multivalued and destination for multiple copyFields (2)
+INFO  - 2015-06-03 08:42:24.965; [   ] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-06-03 08:42:24.965; [   ] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-06-03 08:42:24.973; [   ] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-06-03 08:42:24.973; [   ] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-06-03 08:42:25.025; [   ] org.apache.solr.core.CoreContainer; Creating SolrCore 'fileMetadataCore' using configuration from instancedir /home/sachith/programs/solr/server/solr/fileMetadataCore/
+INFO  - 2015-06-03 08:42:25.025; [   ] org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-06-03 08:42:25.030; [   ] org.apache.solr.core.SolrCore; [fileMetadataCore] Opening new SolrCore at /home/sachith/programs/solr/server/solr/fileMetadataCore/, dataDir=/home/sachith/programs/solr/server/solr/fileMetadataCore/data/
+INFO  - 2015-06-03 08:42:25.031; [   ] org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2015-06-03 08:42:25.033; [   ] org.apache.solr.core.SolrCore; [fileMetadataCore] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-06-03 08:42:25.034; [   ] org.apache.solr.core.SolrCore; [fileMetadataCore] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-06-03 08:42:25.037; [   ] org.apache.solr.core.CoreContainer; Creating SolrCore 'evidenceCore' using configuration from instancedir /home/sachith/programs/solr/server/solr/evidenceCore/
+INFO  - 2015-06-03 08:42:25.037; [   ] org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-06-03 08:42:25.038; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Opening new SolrCore at /home/sachith/programs/solr/server/solr/evidenceCore/, dataDir=/home/sachith/programs/solr/server/solr/evidenceCore/data/
+INFO  - 2015-06-03 08:42:25.038; [   ] org.apache.solr.core.JmxMonitoredMap; No JMX servers found, not exposing Solr information with JMX.
+INFO  - 2015-06-03 08:42:25.039; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-06-03 08:42:25.039; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[]}
+INFO  - 2015-06-03 08:42:25.045; [   ] org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/sachith/programs/solr/server/solr/fileMetadataCore/data
+INFO  - 2015-06-03 08:42:25.045; [   ] org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/sachith/programs/solr/server/solr/evidenceCore/data
+INFO  - 2015-06-03 08:42:25.046; [   ] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/sachith/programs/solr/server/solr/fileMetadataCore/data/index/
+INFO  - 2015-06-03 08:42:25.046; [   ] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/home/sachith/programs/solr/server/solr/evidenceCore/data/index/
+INFO  - 2015-06-03 08:42:25.046; [   ] org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/sachith/programs/solr/server/solr/fileMetadataCore/data/index
+WARN  - 2015-06-03 08:42:25.046; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Solr index directory '/home/sachith/programs/solr/server/solr/evidenceCore/data/index' doesn't exist. Creating new index...
+INFO  - 2015-06-03 08:42:25.053; [   ] org.apache.solr.core.CachingDirectoryFactory; return new directory for /home/sachith/programs/solr/server/solr/evidenceCore/data/index
+INFO  - 2015-06-03 08:42:25.058; [   ] org.apache.solr.core.PluginBag; queryResponseWriter : 'velocity' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.062; [   ] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2015-06-03 08:42:25.096; [   ] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-06-03 08:42:25.097; [   ] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-06-03 08:42:25.098; [   ] org.apache.solr.core.PluginBag; queryResponseWriter : 'velocity' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.098; [   ] org.apache.solr.response.XSLTResponseWriter; xsltCacheLifetimeSeconds=5
+INFO  - 2015-06-03 08:42:25.154; [   ] org.apache.solr.update.processor.UpdateRequestProcessorChain; creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+INFO  - 2015-06-03 08:42:25.154; [   ] org.apache.solr.update.processor.UpdateRequestProcessorChain; creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+INFO  - 2015-06-03 08:42:25.209; [   ] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-06-03 08:42:25.209; [   ] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-06-03 08:42:25.231; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.231; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.232; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.232; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.233; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.233; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.233; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.233; [   ] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-06-03 08:42:25.242; [   ] org.apache.solr.core.PluginBag; requestHandler : '/update/extract' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.242; [   ] org.apache.solr.core.PluginBag; requestHandler : '/update/extract' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.243; [   ] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.243; [   ] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.244; [   ] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.244; [   ] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/spell' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/spell' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/tvrh' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/tvrh' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/elevate' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.245; [   ] org.apache.solr.core.PluginBag; requestHandler : '/elevate' created with startup=lazy 
+INFO  - 2015-06-03 08:42:25.246; [   ] org.apache.solr.core.RequestHandlers; Registered paths: /admin/logging,/admin/plugins,/admin/system,/admin/segments,/admin/file,/admin/luke,/update,/terms,/stream,/admin/threads,/schema,/query,/replication,/analysis/field,/browse,/admin/ping,/update/json/docs,/analysis/document,/select,/admin/mbeans,/update/csv,/elevate,/get,/update/json,/export,/update/extract,/admin/properties,/tvrh,/spell,/config,/debug/dump
+INFO  - 2015-06-03 08:42:25.246; [   ] org.apache.solr.core.RequestHandlers; Registered paths: /admin/logging,/admin/plugins,/admin/system,/admin/segments,/admin/file,/admin/luke,/update,/terms,/stream,/admin/threads,/schema,/query,/replication,/analysis/field,/browse,/admin/ping,/update/json/docs,/analysis/document,/select,/admin/mbeans,/update/csv,/elevate,/get,/update/json,/export,/update/extract,/admin/properties,/tvrh,/spell,/config,/debug/dump
+INFO  - 2015-06-03 08:42:25.248; [   ] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-06-03 08:42:25.248; [   ] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-06-03 08:42:25.254; [   ] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2015-06-03 08:42:25.254; [   ] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2015-06-03 08:42:25.254; [   ] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10
+INFO  - 2015-06-03 08:42:25.254; [   ] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10
+INFO  - 2015-06-03 08:42:25.262; [   ] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-06-03 08:42:25.262; [   ] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-06-03 08:42:25.262; [   ] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2015-06-03 08:42:25.262; [   ] org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2015-06-03 08:42:25.267; [   ] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-06-03 08:42:25.267; [   ] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-06-03 08:42:25.270; [   ] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/fileMetadataCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+INFO  - 2015-06-03 08:42:25.270; [   ] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 2
+INFO  - 2015-06-03 08:42:25.277; [   ] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@59dccbb3[evidenceCore] main
+INFO  - 2015-06-03 08:42:25.282; [   ] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/sachith/programs/solr/server/solr/evidenceCore/conf
+INFO  - 2015-06-03 08:42:25.282; [   ] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/home/sachith/programs/solr/server/solr/evidenceCore/conf}
+INFO  - 2015-06-03 08:42:25.290; [   ] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/home/sachith/programs/solr/server/solr/evidenceCore/conf
+INFO  - 2015-06-03 08:42:25.290; [   ] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-06-03 08:42:25.293; [   ] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@60cb201b[fileMetadataCore] main
+INFO  - 2015-06-03 08:42:25.293; [   ] org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: /home/sachith/programs/solr/server/solr/fileMetadataCore/conf
+INFO  - 2015-06-03 08:42:25.293; [   ] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=/home/sachith/programs/solr/server/solr/fileMetadataCore/conf}
+INFO  - 2015-06-03 08:42:25.293; [   ] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=/home/sachith/programs/solr/server/solr/fileMetadataCore/conf
+INFO  - 2015-06-03 08:42:25.294; [   ] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-06-03 08:42:25.295; [   ] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2015-06-03 08:42:25.295; [   ] org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2015-06-03 08:42:25.299; [   ] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2015-06-03 08:42:25.299; [   ] org.apache.solr.spelling.DirectSolrSpellChecker; init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+INFO  - 2015-06-03 08:42:25.304; [   ] org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2015-06-03 08:42:25.304; [   ] org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2015-06-03 08:42:25.305; [   ] org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/sachith/programs/solr/server/solr/fileMetadataCore/conf/elevate.xml
+INFO  - 2015-06-03 08:42:25.305; [   ] org.apache.solr.handler.component.QueryElevationComponent; Loading QueryElevation from: /home/sachith/programs/solr/server/solr/evidenceCore/conf/elevate.xml
+INFO  - 2015-06-03 08:42:25.318; [   ] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-06-03 08:42:25.318; [   ] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-06-03 08:42:25.318; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@59dccbb3[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@60cb201b[fileMetadataCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1)))}
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: default
+INFO  - 2015-06-03 08:42:25.319; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Registered new searcher Searcher@59dccbb3[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-06-03 08:42:25.320; [   ] org.apache.solr.handler.component.SpellCheckComponent$SpellCheckerListener; Loading spell index for spellchecker: wordbreak
+INFO  - 2015-06-03 08:42:25.320; [   ] org.apache.solr.core.SolrCore; [fileMetadataCore] Registered new searcher Searcher@60cb201b[fileMetadataCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1)))}
+INFO  - 2015-06-03 08:42:25.320; [   ] org.apache.solr.core.CoreContainer; registering core: evidenceCore
+INFO  - 2015-06-03 08:42:25.320; [   ] org.apache.solr.core.CoreContainer; registering core: fileMetadataCore
+INFO  - 2015-06-03 08:42:25.321; [   ] org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/sachith/programs/solr/server
+INFO  - 2015-06-03 08:42:25.321; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2015-06-03 08:42:25.341; [   ] org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2015-06-03 08:42:40.349; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=*:*&_=1433320960309&wt=json} hits=0 status=0 QTime=23 
+INFO  - 2015-06-03 08:42:41.148; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=*:*&_=1433320961145&wt=json} hits=0 status=0 QTime=0 
+INFO  - 2015-06-03 08:42:49.531; [   evidenceCore] org.apache.solr.update.processor.LogUpdateProcessor; [evidenceCore] webapp=/solr path=/update params={wt=javabin&version=2} {add=[df880e8b-9bdd-47eb-88a2-118b90dd2dd8 (1502945968915480576)]} 0 64
+INFO  - 2015-06-03 08:42:49.533; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+INFO  - 2015-06-03 08:42:49.554; [   evidenceCore] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@7a713659[evidenceCore] main
+INFO  - 2015-06-03 08:42:49.555; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-06-03 08:42:49.556; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@7a713659[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1)))}
+INFO  - 2015-06-03 08:42:49.556; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-06-03 08:42:49.556; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Registered new searcher Searcher@7a713659[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1)))}
+INFO  - 2015-06-03 08:42:52.649; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=*:*&_=1433320972643&wt=json} hits=1 status=0 QTime=3 
+INFO  - 2015-06-03 08:43:01.236; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=hell&_=1433320981229&wt=json} hits=0 status=0 QTime=5 
+INFO  - 2015-06-03 08:43:04.338; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=hell0&_=1433320984335&wt=json} hits=0 status=0 QTime=1 
+INFO  - 2015-06-03 08:43:04.531; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-06-03 08:43:04.567; [   evidenceCore] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+INFO  - 2015-06-03 08:43:04.567; [   evidenceCore] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 2
+INFO  - 2015-06-03 08:43:04.568; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-06-03 08:43:05.228; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=hell0&_=1433320985225&wt=json} hits=0 status=0 QTime=1 
+INFO  - 2015-06-03 08:43:09.275; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=hello&_=1433320989269&wt=json} hits=1 status=0 QTime=3 
+INFO  - 2015-06-03 08:43:20.377; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=test+content&_=1433321000369&wt=json} hits=1 status=0 QTime=5 
+INFO  - 2015-06-03 08:46:34.495; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=test+content&_=1433321194491&wt=json} hits=1 status=0 QTime=1 
+INFO  - 2015-06-03 08:47:12.575; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={start=0&q=hello&wt=javabin&version=2&defType=edismax} hits=1 status=0 QTime=5 
+INFO  - 2015-06-03 08:49:35.898; [   evidenceCore] org.apache.solr.update.processor.LogUpdateProcessor; [evidenceCore] webapp=/solr path=/update params={wt=javabin&version=2} {add=[c52c5aeb-9ba4-447e-ab74-747c02214497 (1502946395050475520)]} 0 3
+INFO  - 2015-06-03 08:49:35.899; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+INFO  - 2015-06-03 08:49:35.906; [   evidenceCore] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@359bf878[evidenceCore] main
+INFO  - 2015-06-03 08:49:35.906; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-06-03 08:49:35.906; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener sending requests to Searcher@359bf878[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1) Uninverting(_1(5.1.0):C1)))}
+INFO  - 2015-06-03 08:49:35.906; [   ] org.apache.solr.core.QuerySenderListener; QuerySenderListener done.
+INFO  - 2015-06-03 08:49:35.907; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Registered new searcher Searcher@359bf878[evidenceCore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.1.0):C1) Uninverting(_1(5.1.0):C1)))}
+INFO  - 2015-06-03 08:49:37.819; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=test+content&_=1433321377815&wt=json} hits=1 status=0 QTime=1 
+INFO  - 2015-06-03 08:49:38.409; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=test+content&_=1433321378406&wt=json} hits=1 status=0 QTime=1 
+INFO  - 2015-06-03 08:49:39.162; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=test+content&_=1433321379159&wt=json} hits=1 status=0 QTime=1 
+INFO  - 2015-06-03 08:49:39.669; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=test+content&_=1433321379666&wt=json} hits=1 status=0 QTime=0 
+INFO  - 2015-06-03 08:49:45.260; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={indent=true&q=sachith&_=1433321385257&wt=json} hits=2 status=0 QTime=1 
+INFO  - 2015-06-03 08:49:50.898; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-06-03 08:49:50.939; [   evidenceCore] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/sachith/programs/solr/server/solr/evidenceCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@10030cb9; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+INFO  - 2015-06-03 08:49:50.940; [   evidenceCore] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 3
+INFO  - 2015-06-03 08:49:50.942; [   evidenceCore] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-06-03 08:49:58.658; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={start=0&q=sachith&wt=javabin&version=2&defType=edismax} hits=2 status=0 QTime=3 
+INFO  - 2015-06-03 08:51:32.561; [   evidenceCore] org.apache.solr.core.SolrCore; [evidenceCore] webapp=/solr path=/select params={start=0&q=sachith&wt=javabin&version=2&defType=edismax} hits=2 status=0 QTime=1 
+INFO  - 2015-06-03 08:53:35.010; [   ] org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2015-06-03 08:53:35.010; [   ] org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/sachith/programs/solr/server/solr-webapp/webapp/},/home/sachith/programs/solr/server/webapps/solr.war
+INFO  - 2015-06-03 08:53:36.011; [   ] org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=482065457
+INFO  - 2015-06-03 08:53:36.013; [   ] org.apache.solr.core.SolrCore; [evidenceCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@133011ad
+INFO  - 2015-06-03 08:53:36.015; [   ] org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=4,autocommit maxTime=15000ms,autocommits=2,soft autocommits=2,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=2,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=428,transaction_logs_total_number=2}
+INFO  - 2015-06-03 08:53:36.015; [   ] org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2015-06-03 08:53:36.016; [   ] org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2015-06-03 08:53:36.016; [   ] org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2015-06-03 08:53:36.017; [   ] org.apache.solr.core.SolrCore; [evidenceCore] Closing main searcher on request.
+INFO  - 2015-06-03 08:53:36.019; [   ] org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2015-06-03 08:53:36.019; [   ] org.apache.solr.core.CachingDirectoryFactory; looking to close /home/sachith/programs/solr/server/solr/evidenceCore/data [CachedDir<<refCount=0;path=/home/sachith/programs/solr/server/solr/evidenceCore/data;done=false>>]
+INFO  - 2015-06-03 08:53:36.019; [   ] org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/sachith/programs/solr/server/solr/evidenceCore/data
+INFO  - 2015-06-03 08:53:36.019; [   ] org.apache.solr.core.CachingDirectoryFactory; looking to close /home/sachith/programs/solr/server/solr/evidenceCore/data/index [CachedDir<<refCount=0;path=/home/sachith/programs/solr/server/solr/evidenceCore/data/index;done=false>>]
+INFO  - 2015-06-03 08:53:36.020; [   ] org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/sachith/programs/solr/server/solr/evidenceCore/data/index
+INFO  - 2015-06-03 08:53:36.020; [   ] org.apache.solr.core.SolrCore; [fileMetadataCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@344f40f9
+INFO  - 2015-06-03 08:53:36.020; [   ] org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=161,transaction_logs_total_number=1}
+INFO  - 2015-06-03 08:53:36.020; [   ] org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2015-06-03 08:53:36.020; [   ] org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2015-06-03 08:53:36.020; [   ] org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2015-06-03 08:53:36.022; [   ] org.apache.solr.core.SolrCore; [fileMetadataCore] Closing main searcher on request.
+INFO  - 2015-06-03 08:53:36.023; [   ] org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2015-06-03 08:53:36.024; [   ] org.apache.solr.core.CachingDirectoryFactory; looking to close /home/sachith/programs/solr/server/solr/fileMetadataCore/data [CachedDir<<refCount=0;path=/home/sachith/programs/solr/server/solr/fileMetadataCore/data;done=false>>]
+INFO  - 2015-06-03 08:53:36.024; [   ] org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/sachith/programs/solr/server/solr/fileMetadataCore/data
+INFO  - 2015-06-03 08:53:36.024; [   ] org.apache.solr.core.CachingDirectoryFactory; looking to close /home/sachith/programs/solr/server/solr/fileMetadataCore/data/index [CachedDir<<refCount=0;path=/home/sachith/programs/solr/server/solr/fileMetadataCore/data/index;done=false>>]
+INFO  - 2015-06-03 08:53:36.024; [   ] org.apache.solr.core.CachingDirectoryFactory; Closing directory: /home/sachith/programs/solr/server/solr/fileMetadataCore/data/index
+INFO  - 2015-06-03 08:53:36.025; [   ] org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/sachith/programs/solr/server/solr-webapp/webapp/},/home/sachith/programs/solr/server/webapps/solr.war
