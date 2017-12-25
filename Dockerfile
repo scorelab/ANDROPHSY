@@ -48,7 +48,8 @@ WORKDIR /opt/workspace
 
 #
 
-LABEL multi.org.label-schema.name = "ANDROPHSY" \
+LABEL multi.org.label-schema.build-date = "" \
+      multi.org.label-schema.name = "ANDROPHSY" \
       multi.org.label-schema.description = "ANDROPHSY is an opensource forensic tool for Android smartphones that helps digital forensic investigator throughout the life cycle of digital forensic investigation." \
       multi.org.label-schema.url="https://github.com/scorelab/ANDROPHSY/blob/master/README.md" \
       multi.org.label-schema.vcs-url = "https://github.com/scorelab/ANDROPHSY" \
