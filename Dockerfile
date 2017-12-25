@@ -45,3 +45,14 @@ RUN apt-get clean
 # GO to workspace 
 RUN mkdir -p /opt/workspace
 WORKDIR /opt/workspace
+
+#
+
+LABEL multi.org.label-schema.name = "ANDROPHSY" \
+      multi.org.label-schema.description = "ANDROPHSY is an opensource forensic tool for Android smartphones that helps digital forensic investigator throughout the life cycle of digital forensic investigation." \
+      multi.org.label-schema.url="https://github.com/scorelab/ANDROPHSY/blob/master/README.md" \
+      multi.org.label-schema.vcs-url = "https://github.com/scorelab/ANDROPHSY" \
+      multi.org.label-schema.vcs-ref = "279FA63" \
+      multi.org.label-schema.vendor = "Sustainable Computing Research Group" \
+      multi.org.label-schema.version = "25-December-2017" \
+      multi.org.label-schema.schema-version = "1.0"
